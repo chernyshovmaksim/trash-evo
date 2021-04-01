@@ -3,6 +3,7 @@
 namespace EvolutionCMS\Main\Controllers;
 
 use Illuminate\Support\Facades\Cache;
+use EvolutionCMS\Models\SiteContent;
 
 class BaseController
 {
@@ -29,6 +30,19 @@ class BaseController
 
     public function render()
     {
+        $this->data['services'] = SiteContent::withTVs(['service_image'])
+            ->active()
+            ->where('parent', 2)
+            ->orderBy('menuindex', 'asc')
+            ->get()
+            ->toArray();
+
+        $this->data['sliders'] = SiteContent::withTVs(['slider_image'])
+            ->active()
+            ->where('parent', 7)
+            ->orderBy('menuindex', 'asc')
+            ->get()
+            ->toArray();
 
     }
 
