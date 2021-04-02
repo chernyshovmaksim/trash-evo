@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Вывоз мусора Новосибирск</title>
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -18,23 +18,23 @@
 			</div>
 			<div class="header__nav">
 				<nav class="nav">
-					<a class="nav__item" href="#">Главная</a>
-					<a class="nav__item" href="#">Мусор</a>
-					<a class="nav__item" href="#">Техника</a>
-					<a class="nav__item" href="#">Прайс</a>
-					<a class="nav__item" href="#">Документы</a>
-					<a class="nav__item" href="#">Реквизиты</a>
-					<a class="nav__item" href="#">Заказать звонок</a>
+					<a class="nav__item" href="/">Главная</a>
+					<a class="nav__item" href="#trash">Мусор</a>
+					<a class="nav__item" href="#cars">Техника</a>
+					<a class="nav__item" href="#price">Прайс</a>
+					<a class="nav__item" href="">Документы</a>
+					<a class="nav__item" href="">Реквизиты</a>
+					<a class="nav__item" href="">Заказать звонок</a>
 				</nav>
 				<nav class="mobile-nav">
 					<ul>
-						<li><a class="nav__item" href="#">Главная</a></li>
-						<li><a class="nav__item" href="#">Мусор</a></li>
-						<li><a class="nav__item" href="#">Техника</a></li>
-						<li><a class="nav__item" href="#">Прайс</a></li>
-						<li><a class="nav__item" href="#">Документы</a></li>
-						<li><a class="nav__item" href="#">Реквизиты</a></li>
-						<li><a class="nav__item" href="#">Заказать звонок</a></li>
+						<li><a class="nav__item" href="/">Главная</a></li>
+						<li><a class="nav__item" href="#trash">Мусор</a></li>
+						<li><a class="nav__item" href="#cars">Техника</a></li>
+						<li><a class="nav__item" href="#price">Прайс</a></li>
+						<li><a class="nav__item" href="">Документы</a></li>
+						<li><a class="nav__item" href="">Реквизиты</a></li>
+						<li><a class="nav__item" href="">Заказать звонок</a></li>
 					</ul>
 				</nav>
 				<div class="hamburger">
@@ -104,7 +104,7 @@
 	</section>
 
 
-	<section class="trash">
+	<section class="trash" id="trash">
 		<div class="container trash__wrapper">
 			<h1 class="header-1">
 				Вывоз любого мусора
@@ -156,7 +156,7 @@
 	</section>
 
 
-	<section class="cars">
+	<section class="cars" id="cars">
 		<div class="container cars__wrapper">
 			<h1 class="header-1">
 				Наша техника
@@ -249,7 +249,7 @@
 	</section>
 
 
-	<section class="price">
+	<section class="price" id="price">
 		<div class="container price__wrapper">
 			<h1 class="header-1">
 				Наши тарифы - просты и понятны
@@ -462,7 +462,7 @@
 
 
 	<div class="popup">
-		<form>
+		<form name="callback">
 			<input class="popup__name" type="text" name="name" placeholder="Ваше имя" required>
 			<input class="popup__tel" type="tel" name="phone" placeholder="Ваш телефон +7(000)000-00-00" required>
 			<button class="popup__submit" type="submit">Отправить</button>
@@ -472,7 +472,7 @@
 
 
 
-	<script src="/js/app.min.js"></script>
+	<script src="./js/app.min.js"></script>
 </body>
 
 </html>

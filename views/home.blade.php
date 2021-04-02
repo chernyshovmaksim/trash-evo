@@ -24,7 +24,7 @@
                 </nav>
                 <nav class="mobile-nav">
                     <ul>
-                        <li><a class="nav__item" href="#">Главная</a></li>
+                        <li><a class="nav__item" href="/">Главная</a></li>
                         <li><a class="nav__item" href="#trash">Мусор</a></li>
                         <li><a class="nav__item" href="#cars">Техника</a></li>
                         <li><a class="nav__item" href="#price">Прайс</a></li>
