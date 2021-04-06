@@ -102,9 +102,9 @@
     </section>
 
 
-    <section class="trash" id="trash">
+    <section class="trash">
         <div class="container trash__wrapper">
-            <h1 class="header-1">
+            <h1 class="header-1" id="trash">
                 Вывоз любого мусора
             </h1>
             <h2 class="header-2">
@@ -141,9 +141,9 @@
     </section>
 
 
-    <section class="cars" id="cars">
+    <section class="cars">
         <div class="container cars__wrapper">
-            <h1 class="header-1">
+            <h1 class="header-1" id="cars">
                 Наша техника
             </h1>
             <h2 class="header-2">
@@ -167,9 +167,9 @@
     </section>
 
 
-    <section class="price" id="price">
+    <section class="price">
         <div class="container price__wrapper">
-            <h1 class="header-1">
+            <h1 class="header-1" id="price">
                 Наши тарифы - просты и понятны
             </h1>
             <h2 class="header-2">
@@ -186,9 +186,9 @@
     </section>
 
 
-    <section class="documents" id="documents">
+    <section class="documents">
         <div class="container documents__wrapper">
-            <h1 class="header-1">
+            <h1 class="header-1" id="documents">
                 Работаем и с юридическими лицами
             </h1>
             <h2 class="header-2">
@@ -217,9 +217,9 @@
     </section>
 
 
-    <section class="description" id="details">
+    <section class="description">
         <div class="container description__wrapper">
-            <h2 class="header-1">
+            <h2 class="header-1" id="details">
                 Вывоз мусора в Новосибирске
             </h2>
 
