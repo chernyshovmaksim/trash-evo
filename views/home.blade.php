@@ -49,7 +49,7 @@
                 </div>
                 <div class="contacts__data">
                     <div class="contacts__phone">
-                        <a href="tel://+79538888497">8 (953) 8888-497</a>
+                        <a href="tel://{{$seo['tel_digits']}}">{{$seo['tel']}}</a>
                     </div>
                     <div class="contacts__jobs-time">
                         Работаем ежедневно 24/7
@@ -131,7 +131,7 @@
                     <div class="question-block__callback consultation">
                         <div class="consultation__header">
                             <h4>Просто позвоните нам</h4>
-                            <a href="tel://+79538888497">8 (953) 8888-497</a>
+                            <a href="tel://{{$seo['tel_digits']}}">{{$seo['tel']}}</a>
                         </div>
                         <div class="consultation__btn btn" data-popup>Получить консультацию</div>
                     </div>

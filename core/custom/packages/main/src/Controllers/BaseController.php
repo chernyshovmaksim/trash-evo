@@ -70,7 +70,7 @@ class BaseController
 
     public function globalElements()
     {
-        $this->data['seo'] = SiteContent::withTVs(['keyw', 'descr'])
+        $this->data['seo'] = SiteContent::withTVs(['keyw', 'descr', 'tel', 'tel_digits'])
             ->where('site_content.id', 1)
             ->first()
             ->toArray();

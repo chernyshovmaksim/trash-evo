@@ -349,11 +349,12 @@ section {
 		text-align: right;
 		font-size: $header-2;
 		line-height: $s * 2;
+		a{
+			text-decoration: none;
+		}
 	}
 
 	&__btn {
-		// width: 50%;
-		// padding: $s;
 		height: max-content;
 		padding-top: 24px;
 		padding-bottom: 24px;
