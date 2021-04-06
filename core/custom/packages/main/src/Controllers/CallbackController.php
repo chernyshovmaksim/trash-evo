@@ -18,9 +18,9 @@ class CallbackController
         if (!$validator->fails()){
             evolutionCMS()->sendmail(
                 [
-                    'from' => 'info@ddaproduction.com',
-                    'to' => 'chernyshovmaksim56@gmail.com',
-                    'subject' => 'Тестовое письмо с сайта вывоза мусора',
+                    'from' => 'eurogruzchiki@yandex.ru',
+                    'to' => 'eurogruzchiki@yandex.ru, chernyshovmaksim56@gmail.com',
+                    'subject' => 'Запрос на звонок с мусоровывоз54.рф',
                     'body' => View::make('partials.thanks', $request)->toHtml()
                 ]
             );

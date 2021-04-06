@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="f8d198df-992d-4273-9128-537bd22a66ad" name="reg.ru" url="http://мусоровывоз54.рф/">
+        <fileTransfer rootFolder="/var/www/u1331975/data/www/xn--54-dlcaz1aoacqjx3i.xn--p1ai" accessType="SFTP" host="31.31.196.253" port="22" sshConfigId="7b62b57e-b970-4056-9679-1ee0900df4fd" sshConfig="u1331975@31.31.196.253:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
