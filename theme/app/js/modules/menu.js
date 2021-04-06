@@ -31,5 +31,9 @@ $('.nav__item').click(function () {
 				}, 500);
 				drawer.close();
 	}
+
+	if($(this).hasClass('nav__callback')){
+		drawer.close();
+	}
 	
 });
