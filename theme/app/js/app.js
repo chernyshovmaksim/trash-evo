@@ -30,9 +30,7 @@ $(document).ready(function () {
 			.then(res => res.json())
 			.then(res => {
 				document.querySelector('.popup').innerHTML = res.output;
-				Object.keys(res.errors).forEach((key) => {
-					document.querySelector(`[name='${key}']`).classList.add('is-invalid')
-				});
+				// console.log(res);
 			})
 			.catch(errors => {
 				console.log(errors);

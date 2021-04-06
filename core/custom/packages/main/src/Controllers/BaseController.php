@@ -30,6 +30,7 @@ class BaseController
 
     public function render()
     {
+
         $this->data['services'] = SiteContent::withTVs(['service_image'])
             ->active()
             ->where('parent', 2)
@@ -44,6 +45,22 @@ class BaseController
             ->get()
             ->toArray();
 
+        $this->data['cars'] = SiteContent::withTVs(['car_image'])
+            ->active()
+            ->where('parent', 8)
+            ->orderBy('menuindex', 'asc')
+            ->get()
+            ->toArray();
+
+        $this->data['price'] = $this->evo->runSnippet('multiTV', [
+            'tvName' => 'price',
+            'docid' => '9'
+        ]);
+
+        $this->data['documents'] = SiteContent::where('id', 10)
+            ->first()
+            ->toArray();
+
     }
 
     public function noCacheRender()
@@ -53,7 +70,10 @@ class BaseController
 
     public function globalElements()
     {
-
+        $this->data['seo'] = SiteContent::withTVs(['keyw', 'descr'])
+            ->where('site_content.id', 1)
+            ->first()
+            ->toArray();
     }
 
     public function sendToView()

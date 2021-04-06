@@ -183,6 +183,11 @@ section {
 	&__item {
 		margin-right: $s;
 	}
+	&__callback{
+		&:hover{
+			cursor: pointer;
+		}
+	}
 }
 
 .contacts {

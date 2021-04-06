@@ -11,19 +11,24 @@ class CallbackController
         $validator = \Validator::make($request->all(), [
             'name' => ['required', 'min:5'],
             'phone' => ['required']
-        ],[
-            'name.required' => 'Поле имя обязательно для заполнения.',
-            'name.min' => 'Имя должно содержать минимум 5 символов.',
-            'phone.required' => 'Поле телефона обязательно для заполнения.'
         ]);
 
 
 
         if (!$validator->fails()){
-
+            evolutionCMS()->sendmail(
+                [
+                    'from' => 'info@ddaproduction.com',
+                    'to' => 'chernyshovmaksim56@gmail.com',
+                    'subject' => 'Тестовое письмо с сайта вывоза мусора',
+                    'body' => View::make('partials.thanks', $request)->toHtml()
+                ]
+            );
+            $data = [
+                'output' => View::make('partials.success', $request)->toHtml()
+            ];
         } else {
             $data = [
-                'output' => View::make('partials.form', $request)->withErrors($validator)->toHtml(),
                 'errors' => $validator->errors()
             ];
         }

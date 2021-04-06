@@ -20,7 +20,7 @@
                     <a class="nav__item" href="#price">Прайс</a>
                     <a class="nav__item" href="#documents">Документы</a>
                     <a class="nav__item" href="#details">Реквизиты</a>
-                    <a class="nav__item" href="#callback" data-popup>Заказать звонок</a>
+                    <a class="nav__item  nav__callback" data-popup>Заказать звонок</a>
                 </nav>
                 <nav class="mobile-nav">
                     <ul>
@@ -30,7 +30,7 @@
                         <li><a class="nav__item" href="#price">Прайс</a></li>
                         <li><a class="nav__item" href="#documents">Документы</a></li>
                         <li><a class="nav__item" href="#details">Реквизиты</a></li>
-                        <li><a class="nav__item" href="#callback">Заказать звонок</a></li>
+                        <li><a class="nav__item  nav__callback" data-popup>Заказать звонок</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger">
@@ -151,84 +151,17 @@
             </h2>
 
             <div class="cars__content">
-                <div class="cars__item car">
-                    <div class="car__photo">
-                        <img class="lazy" data-src="/theme/img/3.webp" alt="">
+                @foreach($cars as $car)
+                    <div class="cars__item car">
+                        <div class="car__photo">
+                            <img class="lazy" data-src="{{\Helper::phpThumb($car['car_image'], 'webp=1,w=280,h=185, c=1')}}" alt="{{$car['pagetitle']}}">
+                        </div>
+                        <div class="car__title">{{$car['pagetitle']}}</div>
+                        <div class="car__description">
+                            {!! $car['content'] !!}
+                        </div>
                     </div>
-                    <div class="car__title">Газель 8 куб. м.</div>
-                    <div class="car__description">
-                        <p>Цельнометаллическая Газель</p>
-                        <p>Объемом грузового отсека <strong>8 куб. м.</strong></p>
-                        <p>Грузоподъемность <strong>1,5т.</strong></p>
-                        <p>Проходит в любые арки</p>
-                        <p>Для вывоза: <strong>бытовой техники, мебели, строительного мусора в мешках.</strong></p>
-                    </div>
-                </div>
-                <div class="cars__item car">
-                    <div class="car__photo">
-                        <img class="lazy" data-src="/theme/img/3.webp" alt="">
-                    </div>
-                    <div class="car__title">Газель 8 куб. м.</div>
-                    <div class="car__description">
-                        <p>Цельнометаллическая Газель</p>
-                        <p>Объемом грузового отсека <strong>8 куб. м.</strong></p>
-                        <p>Грузоподъемность <strong>1,5т.</strong></p>
-                        <p>Проходит в любые арки</p>
-                        <p>Для вывоза: <strong>бытовой техники, мебели, строительного мусора в мешках.</strong></p>
-                    </div>
-                </div>
-                <div class="cars__item car">
-                    <div class="car__photo">
-                        <img class="lazy" data-src="/theme/img/3.webp" alt="">
-                    </div>
-                    <div class="car__title">Газель 8 куб. м.</div>
-                    <div class="car__description">
-                        <p>Цельнометаллическая Газель</p>
-                        <p>Объемом грузового отсека <strong>8 куб. м.</strong></p>
-                        <p>Грузоподъемность <strong>1,5т.</strong></p>
-                        <p>Проходит в любые арки</p>
-                        <p>Для вывоза: <strong>бытовой техники, мебели, строительного мусора в мешках.</strong></p>
-                    </div>
-                </div>
-                <div class="cars__item car">
-                    <div class="car__photo">
-                        <img class="lazy" data-src="/theme/img/3.webp" alt="">
-                    </div>
-                    <div class="car__title">Газель 8 куб. м.</div>
-                    <div class="car__description">
-                        <p>Цельнометаллическая Газель</p>
-                        <p>Объемом грузового отсека <strong>8 куб. м.</strong></p>
-                        <p>Грузоподъемность <strong>1,5т.</strong></p>
-                        <p>Проходит в любые арки</p>
-                        <p>Для вывоза: <strong>бытовой техники, мебели, строительного мусора в мешках.</strong></p>
-                    </div>
-                </div>
-                <div class="cars__item car">
-                    <div class="car__photo">
-                        <img class="lazy" data-src="/theme/img/3.webp" alt="">
-                    </div>
-                    <div class="car__title">Газель 8 куб. м.</div>
-                    <div class="car__description">
-                        <p>Цельнометаллическая Газель</p>
-                        <p>Объемом грузового отсека <strong>8 куб. м.</strong></p>
-                        <p>Грузоподъемность <strong>1,5т.</strong></p>
-                        <p>Проходит в любые арки</p>
-                        <p>Для вывоза: <strong>бытовой техники, мебели, строительного мусора в мешках.</strong></p>
-                    </div>
-                </div>
-                <div class="cars__item car">
-                    <div class="car__photo">
-                        <img class="lazy" data-src="/theme/img/3.webp" alt="">
-                    </div>
-                    <div class="car__title">Газель 8 куб. м.</div>
-                    <div class="car__description">
-                        <p>Цельнометаллическая Газель</p>
-                        <p>Объемом грузового отсека <strong>8 куб. м.</strong></p>
-                        <p>Грузоподъемность <strong>1,5т.</strong></p>
-                        <p>Проходит в любые арки</p>
-                        <p>Для вывоза: <strong>бытовой техники, мебели, строительного мусора в мешках.</strong></p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -244,42 +177,7 @@
             </h2>
 
             <div class="price__content">
-                <table>
-                    <thead>
-                    <tr>
-                        <td>Машина</td>
-                        <td>Обьем</td>
-                        <td>Вес</td>
-                        <td>Цена</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Газель тент</td>
-                        <td>8 м3</td>
-                        <td>до 1 т.</td>
-                        <td>2500 р.</td>
-                    </tr>
-                    <tr>
-                        <td>Газель тент</td>
-                        <td>8 м3</td>
-                        <td>до 1 т.</td>
-                        <td>2500 р.</td>
-                    </tr>
-                    <tr>
-                        <td>Газель тент</td>
-                        <td>8 м3</td>
-                        <td>до 1 т.</td>
-                        <td>2500 р.</td>
-                    </tr>
-                    <tr>
-                        <td>Газель тент</td>
-                        <td>8 м3</td>
-                        <td>до 1 т.</td>
-                        <td>2500 р.</td>
-                    </tr>
-                    </tbody>
-                </table>
+                {!! $price !!}
                 <div class="call btn" data-popup>
                     Заказать вызов
                 </div>
@@ -304,13 +202,7 @@
                 <div class="documents_image"><img class="lazy" data-src="/theme/img/doorway_-4-1.webp" alt=""></div>
                 <div class="documents__description">
                     <p>
-                        <strong>Индивидуальный предприниматель</strong>: Юмагулов Илья Евгеньевич<br>
-                        <strong>Юридический адрес</strong>: г. Новосибирск<br>
-                        <strong>ИНН</strong>: 540139434500<br>
-                        <strong>Р/сч</strong>: 40802810600000898314 в АО «ТИНЬКОФФ БАНК» Г.Москва<br>
-                        <strong>Кор/сч</strong>: 30101810145250000974<br>
-                        <strong>БИК</strong>: 044525974<br>
-                        <br><strong>Email</strong>: <a href="mailto:safirline@mail.ru">eurogruzchiki@yandex.ru</a>
+                        {!! $documents['content'] !!}
                     </p>
                 </div>
             </div>
