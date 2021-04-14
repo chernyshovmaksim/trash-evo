@@ -8,7 +8,7 @@
             <div class="header__logo">
                 <a href="/">
                     <img class="lazy" width="50px" height="50px"
-                         data-src="{{ \Helper::phpThumb('/theme/img/logo.webp', 'w=50,h=50,webp=1') }}"
+                         data-src="{{ \Helper::phpThumb($seo['logo'], 'w=50,h=50,webp=1') }}"
                          alt="Вывоз мусора Новосибирск">
                 </a>
             </div>
@@ -329,7 +329,7 @@
         <div class="container">
             <div class="footer__logo">
                 <img class="lazy" width="50px" height="50px"
-                     data-src="{{ \Helper::phpThumb('/theme/img/logo.webp', 'w=50,h=50,webp=1') }}"
+                     data-src="{{ \Helper::phpThumb($seo['logo'], 'w=50,h=50,webp=1') }}"
                      alt="Вывоз мусора Новосибирск">
                 <span>
 					Компания мусоровывоз54.рф 654000 г. Новосибирск, 2-й рабочий переулок 14

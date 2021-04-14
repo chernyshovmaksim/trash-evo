@@ -9,7 +9,7 @@ class CallbackController
 {
     public function form(Request $request){
         $validator = \Validator::make($request->all(), [
-            'name' => ['required', 'min:5'],
+            'name' => ['required'],
             'phone' => ['required']
         ]);
 
