@@ -109,7 +109,6 @@
             <h2 class="header-2">
                 Более 5 лет мы успешно утилизируем
             </h2>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/H53wLF61_7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="trash__content">
                 <div class="trash__services services">
 
@@ -124,6 +123,7 @@
                         </div>
                     @endforeach
                 </div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/H53wLF61_7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="trash__questions question-block">
                     <h3 class="question-block__header">- Сколько будет стоить вывоз вашего мусора?</h3>
                     <h3 class="question-block__header">- Менеджер рассчитает стоимость и подберет машину.</h3>

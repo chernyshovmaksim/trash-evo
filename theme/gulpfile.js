@@ -105,3 +105,4 @@ const watching = cb => {
 
 exports.default = series(clean, images, parallel(style, scripts, watching, server));
 exports.build = series(clean, images, scripts, deepMinifyStyle);
+exports.style = series(style);
