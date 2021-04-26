@@ -68,7 +68,6 @@
             <h2 class="header-2">
                 в Новосибирске с грузчиками и без
             </h2>
-
             <div class="hero__content">
                 <div class="hero__slider slider">
 
@@ -110,7 +109,7 @@
             <h2 class="header-2">
                 Более 5 лет мы успешно утилизируем
             </h2>
-
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/H53wLF61_7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="trash__content">
                 <div class="trash__services services">
 

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{$seo['site_name']}}</title>
-    <link type="image/webp" rel="icon" href="{{ \Helper::phpThumb($seo['logo'], 'w=16,h=16,webp=1') }}">
+    <link rel="icon" href="/theme/img/favicon.ico" type="image/ico">
+{{--    <link type="image/webp" rel="icon" href="{{ \Helper::phpThumb($seo['logo'], 'w=16,h=16,webp=1') }}">--}}
     <link rel="stylesheet" href="/theme/css/style.min.css">
     @if($seo['keyw'])
         <meta name="keywords" content="{{$seo['keyw']}}">
